@@ -17,7 +17,7 @@ object BaseScenario {
     .get(resourcesPath + "/${resourceId}")
     .check(status is 200)
 
-  val createAndAccessResources = scenario("resoource creation and access scenario")
+  val createAndAccessResources = scenario("resource creation and access scenario")
     .during(60) {
       exec(createResource)
         .repeat(Random.nextInt(5) + 1) {
