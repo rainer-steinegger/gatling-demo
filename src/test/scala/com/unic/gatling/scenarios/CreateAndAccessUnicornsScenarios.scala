@@ -21,7 +21,7 @@ object CreateAndAccessUnicornsScenarios {
 
   val createAndAccessUnicornsScenario = scenario("unicorn creation and access scenario")
     .feed(HardcodedFeeder.hardcodedFeed)
-    .during(5) {
+    .during(300) {
       exec(createUnicornScenario)
         .repeat(Random.nextInt(5) + 1) {
           exec(accessUnicornScenario)
