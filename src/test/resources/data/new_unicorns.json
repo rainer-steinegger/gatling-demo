@@ -1,0 +1,14 @@
+[
+  {
+    "firstName": "Pinkie",
+    "lastName": "Pie",
+    "gender": "female",
+    "age": 120
+  },
+  {
+    "firstName": "Champion",
+    "lastName": "Stallion",
+    "gender": "male",
+    "age": 92
+  }
+]
