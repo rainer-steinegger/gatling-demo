@@ -1,4 +1,4 @@
-package com.citrix.gatling.configurations
+package com.unic.gatling.configurations
 
 object Headers {
   val contentType = "application/json"

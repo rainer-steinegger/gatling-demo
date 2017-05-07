@@ -1,4 +1,4 @@
-package com.citrix.gatling.configurations
+package com.unic.gatling.configurations
 
 import scala.util.Properties
 
