@@ -12,7 +12,7 @@ class UnicornSimulations extends Simulation {
     .contentTypeHeader(Headers.contentType)
     .acceptHeader(Headers.acceptType)
 
-  setUp(CreateAndAccessUnicornsScenarios.createAndAccessUnicornsScenario.inject(atOnceUsers(25)))
+  setUp(CreateAndAccessUnicornsScenarios.createAndAccessUnicornsScenario.inject(atOnceUsers(50)))
     .protocols(httpConf)
     .assertions(
       global.responseTime.max.lte(Environment.maxResponseTimeInMs.toInt)
