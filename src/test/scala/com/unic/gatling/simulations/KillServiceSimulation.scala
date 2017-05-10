@@ -5,7 +5,7 @@ import com.unic.gatling.scenarios.{CreateAndAccessUnicornsScenario, FilterUnicor
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class StandardSimulation extends Simulation {
+class KillServiceSimulation extends Simulation {
 
   val httpConf = http
     .baseURL(Environment.baseUrl)
@@ -14,9 +14,9 @@ class StandardSimulation extends Simulation {
 
   val scenarios = List(
     CreateAndAccessUnicornsScenario.createAndAccessUnicornsScenario.inject(
-      atOnceUsers(1)),
+      atOnceUsers(50)),
     FilterUnicornsScenario.filterUnicornsScenario.inject(
-      atOnceUsers(15), constantUsersPerSec(2) during(5))
+      atOnceUsers(50), constantUsersPerSec(10) during(60))
   )
 
   setUp(scenarios)

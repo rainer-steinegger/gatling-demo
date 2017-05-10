@@ -119,6 +119,11 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <includes>
+                        <param>com.unic.gatling.simulations.StandardSimulation</param>
+                    </includes>
+                </configuration>
             </plugin>
         </plugins>
 
