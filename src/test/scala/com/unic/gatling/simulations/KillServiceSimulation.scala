@@ -16,7 +16,7 @@ class KillServiceSimulation extends Simulation {
     CreateAndAccessUnicornsScenario.createAndAccessUnicornsScenario.inject(
       atOnceUsers(50)),
     FilterUnicornsScenario.filterUnicornsScenario.inject(
-      atOnceUsers(50), constantUsersPerSec(10) during(60))
+      atOnceUsers(50), constantUsersPerSec(20) during(20))
   )
 
   setUp(scenarios)

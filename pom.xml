@@ -121,7 +121,7 @@
                 </executions>
                 <configuration>
                     <includes>
-                        <param>com.unic.gatling.simulations.StandardSimulation</param>
+                        <param>com.unic.gatling.simulations.KillServiceSimulation</param>
                     </includes>
                 </configuration>
             </plugin>

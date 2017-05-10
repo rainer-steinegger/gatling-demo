@@ -9,7 +9,6 @@ import scala.util.Random
 
 object CreateAndAccessUnicornsScenario {
 
-
   val createUnicornRequest = http("create unicorn")
     .post("/unicorns")
     .body(StringBody("""{"firstName": "${firstName}", "lastName": "${lastName}", "age": ${age}, "gender": "${gender}"}"""))
