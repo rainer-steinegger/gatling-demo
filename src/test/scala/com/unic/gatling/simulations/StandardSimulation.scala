@@ -16,7 +16,7 @@ class StandardSimulation extends Simulation {
     CreateAndAccessUnicornsScenario.createAndAccessUnicornsScenario.inject(
       atOnceUsers(1)),
     FilterUnicornsScenario.filterUnicornsScenario.inject(
-      atOnceUsers(15), constantUsersPerSec(2) during(5))
+      atOnceUsers(15), constantUsersPerSec(2) during 5)
   )
 
   setUp(scenarios)
