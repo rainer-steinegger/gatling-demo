@@ -1,7 +1,7 @@
 package com.unic.gatling.simulations
 
 import com.unic.gatling.configurations.{Environment, Headers}
-import com.unic.gatling.scenarios.{CreateAndAccessUnicornsScenario, FilterUnicornsScenario}
+import com.unic.gatling.scenarios.{RegistrationScenario, FilterScenario}
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
@@ -13,9 +13,9 @@ class StandardSimulation extends Simulation {
     .acceptHeader(Headers.acceptType)
 
   val scenarios = List(
-    CreateAndAccessUnicornsScenario.createAndAccessUnicornsScenario.inject(
+    RegistrationScenario.registrationScenario.inject(
       atOnceUsers(1)),
-    FilterUnicornsScenario.filterUnicornsScenario.inject(
+    FilterScenario.filterUnicornsScenario.inject(
       atOnceUsers(15), constantUsersPerSec(2) during 5)
   )
 
