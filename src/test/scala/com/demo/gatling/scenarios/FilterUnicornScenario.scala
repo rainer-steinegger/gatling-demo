@@ -1,7 +1,7 @@
-package com.unic.gatling.scenarios
+package com.demo.gatling.scenarios
 
-import com.unic.gatling.configurations.Environment
-import com.unic.gatling.feeders.{CsvFeeder, InMemoryFeeder}
+import com.demo.gatling.configurations.Environment
+import com.demo.gatling.feeders.{CsvFeeder, InMemoryFeeder}
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 

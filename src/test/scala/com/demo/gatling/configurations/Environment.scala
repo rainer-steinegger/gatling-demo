@@ -1,4 +1,4 @@
-package com.unic.gatling.configurations
+package com.demo.gatling.configurations
 
 import scala.util.Properties
 

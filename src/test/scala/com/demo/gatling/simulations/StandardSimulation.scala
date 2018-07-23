@@ -1,7 +1,7 @@
-package com.unic.gatling.simulations
+package com.demo.gatling.simulations
 
-import com.unic.gatling.configurations.{Environment, Headers}
-import com.unic.gatling.scenarios.{CreateAndAccessUnicornsScenario, FilterUnicornsScenario}
+import com.demo.gatling.configurations.{Environment, Headers}
+import com.demo.gatling.scenarios.{CreateAndAccessUnicornsScenario, FilterUnicornsScenario}
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
@@ -16,7 +16,7 @@ class StandardSimulation extends Simulation {
     CreateAndAccessUnicornsScenario.createAndAccessUnicornsScenario.inject(
       atOnceUsers(1)),
     FilterUnicornsScenario.filterUnicornsScenario.inject(
-      atOnceUsers(15), constantUsersPerSec(2) during 5)
+      atOnceUsers(5), constantUsersPerSec(1) during 5)
   )
 
   setUp(scenarios)

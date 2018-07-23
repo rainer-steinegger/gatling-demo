@@ -1,4 +1,4 @@
-package com.unic.gatling.feeders
+package com.demo.gatling.feeders
 
 import io.gatling.core.Predef._
 
